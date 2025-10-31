@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+filename="$(date +%F_%H:%M)"
+touch ~/Documents/.thoughtBox/$filename
+micro ~/Documents/.thoughtBox/$filename
+
+if [ -s ~/Documents/.thoughtBox/$filename ]; then
+	echo -e "\n Your thought has been put in the box (~/Documents/.thoughtBox/$filename)\n"
+  else
+	rm ~/Documents/.thoughtBox/$filename && echo -e "\nFile is empty, so it was removed\n"
+fi
+exit 0
