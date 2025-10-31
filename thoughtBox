@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+## Created By Kaitlyn Seymour
 filename="$(date +%F_%H:%M)"
 touch ~/Documents/.thoughtBox/$filename
 micro ~/Documents/.thoughtBox/$filename
